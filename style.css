@@ -1,0 +1,201 @@
+/* Body Styles */
+body {
+    background-image: url("images/Background.jpeg");
+    font-family: "Times New Roman", serif; /* Changed font family */
+}
+
+h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-align: center; /* Centered text */
+}
+
+h2 {
+    font-family: "Times New Roman", serif; /* Changed font family */
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+p {
+    font-size: 18px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center; /* Centered text */
+}
+
+a {
+    color: blue;
+    transition: color 0.7s ease;
+}
+
+a:hover {
+    color: white;
+    background-color: blue; /* Changed from background-image */
+}
+
+img {
+    border-radius: 50%;
+    display: block; /* To center the image */
+    margin: 0 auto; /* To center the image */
+}
+
+.envelope {
+    width: 30px;
+    border-radius: 0%;
+}
+
+.envelope:hover {
+    width: 30px;
+    border-radius: 0%;
+}
+
+.icons-container {
+    text-align: center; /* Center icons */
+}
+
+.social-media-icons {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center icons */
+}
+
+.social-media-icons li {
+    display: inline-block; /* Display icons in a horizontal line */
+    margin: 10px; /* Adjusted margin */
+}
+
+.social-media-icons li a {
+    display: block;
+}
+
+.social-media-icons li a img {
+    width: 150px; /* Increased width for social media icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.icons, #insta, .icon-hobby, .icon-flag {
+    display: inline-block; /* Display icons in a horizontal line */
+    width: 120px; /* Increased width for all icons */
+    height: 80px; /* Adjusted height for all icons */
+    border-radius: 20px; /* Make the boxes less edgy */
+    margin: 10px; /* Adjusted margin */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Added box-shadow */
+}
+
+.icons:hover,
+#insta:hover,
+.icon-hobby:hover,
+.icon-flag:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.icons:active,
+#insta:active,
+.icon-hobby:active,
+.icon-flag:active {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.8);
+    transition: 0.1s;
+}
+
+div {
+    padding: 40px;
+    margin: 50px auto; /* Adjusted margin for centering */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3); /* Increased box-shadow */
+    border-radius: 20px; /* Make the boxes less edgy */
+    text-align: center;
+    background-color: #eaeaea;
+    width: 80%; /* Increased width */
+    max-width: 800px; /* Added max-width */
+}
+
+.lang {
+    height: 100px;
+}
+
+.languages, .hobbies, .personality, .languages {
+    font-size: 30px;
+    margin: auto; /* Centering the text */
+    text-transform: uppercase;
+}
+
+/* Added styles for personality */
+.perso {
+    background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    margin: 20px;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px; /* Make the boxes less edgy */
+}
+
+.perso:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.perso:hover {
+    background-position: 0;
+}
+
+.perso:hover::before {
+    width: 100%;
+}
+.list-horizontal-inline{
+    text-align: center;
+}
+.list-horizontal-inline i{
+    font-size: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+.border-radius {
+    border-radius: 20px;
+}
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.about-me-box, .achievements-box {
+    width: 45%;
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.about-me-box h2, .achievements-box h2 {
+    text-align: center;
+}
+
+.about-me-box p {
+    text-align: justify;
+}
+
+.achievements-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.achievements-box ul li {
+    margin-bottom: 10px;
+}
